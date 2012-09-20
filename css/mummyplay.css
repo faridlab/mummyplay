@@ -1,0 +1,73 @@
+#wrapper{
+	width : 1024px;
+	height: 1024px;
+	margin: 0 auto;
+}
+
+.playerBoard{
+	width : 1004px;
+	height: 50px;
+	padding: 10px;
+}
+
+#board {
+	width:1024px;
+	height: 1024px;
+	background: url('../img/mummyplay.png') no-repeat center center;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {
+    height: 0px;
+    display: block;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-transition: all 0.2s ease-in;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb:vertical {
+    border-right: 8px #000 solid;
+    height: 50px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+    border-bottom: 8px #000 solid;
+    width: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #000;
+    border:0;
+}
+
+#playModal img {
+	cursor: pointer;
+}
+
+#player{
+    position : absolute;
+    width : 120px;
+    height : 120px;
+}
+
+#computer {
+    position : absolute;
+    width : 120px;
+    height : 120px;
+
+}
+
+#dice {
+    position: fixed;
+    top : 300px;
+    right : 5px;
+}

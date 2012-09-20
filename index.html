@@ -1,0 +1,138 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	<link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+	<link href="bootstrap/js/google-code-prettify/prettify.css" rel="stylesheet">
+	<link href="css/mummyplay.css" rel="stylesheet">
+
+	<title>Mummyplay</title>
+</head>
+<body>
+
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="brand" href="http://faridlab.com" target="_blank" style="float:right;" >{faridlab}</a>
+				<div class="nav-collapse collapse">
+					<ul class="nav">
+						<li class="">
+							<a href="#!about" rel="popover" data-content="Mummyplay on chrome application." data-original-title="Mummyplay" id="MummyplayPopover">Mummyplay</a>
+						</li>
+						<li class="">
+							<a href="#playModal" data-toggle="modal" data-target="#playModal">Play</a>
+						</li>
+						<li class="">
+							<a href="#">|</a>
+						</li>
+						<li class="dropdown">
+							<a href="#credit" class="dropdown-toggle" data-toggle="dropdown">Credit <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li class="divider"></li>
+								<li class="nav-header">Developed by :</li>
+								<li><a href="http://faridlab.com" target="_blank">Farid hidayat</a></li>
+								<li class="divider"></li>
+								<li class="nav-header">Powered by :</li>
+								<li><a href="http://xinix.co.id">PT. Xinix Sagara Solusitama</a></li>
+								<li><a href="http://unpam.ac.id">Universitas Pamulang</a></li>
+								<li><a href="#">UNPAM Go Open Source ( UGOS )</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="wrapper">
+		<div class="playerBoard">
+			
+		</div>
+		<div id="board">
+			
+		</div>
+		<div class="playerBoard">
+			
+		</div>
+	</div>
+
+
+	<!-- Player modal here -->
+
+	<div class="modal" id="playModal" tabindex="-1" role="dialog" aria-labelledby="playModalLabel" aria-hidden="true" style="display:none">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+			<h3 id="playModalLabel">Choose your player.</h3>
+		</div>
+		<div class="modal-body">
+			<img src="img/adoel.png" alt="Adoel" data-name="adoel" title="Adoel" width="64px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/alam.png" alt="Alam" data-name="alam" title="Alam" width="64px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/alfath.png" alt="Alfath" data-name="alfath" title="Alfath" width="64px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/ali.png" alt="Ali" title="Ali" data-name="ali" width="64px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/avesena.png" alt="Avesena" data-name="avesena" title="Avesena" width="64px">&nbsp;&nbsp;
+
+
+			<img src="img/dewi.png" alt="Dewi" data-name="dewi" title="Dewi" width="64px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/farid.png" alt="Farid" data-name="farid" title="Farid" width="64px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/ganesha.png" alt="Ganesha" data-name="ganesha" title="Ganesha" width="64px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/ichan.png" alt="Ichan" data-name="ichan" title="Ichan" width="64px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<img src="img/putra.png" alt="Putra" data-name="putra" title="Putra" width="64px">&nbsp;&nbsp;
+		</div>
+
+		<div class="modal-footer">
+			<span style="float: left;margin-top : 5px;"> Your player is <strong id="playerNameSeleted">?</strong> vs Computer ( <strong id="computerSelected">?</strong> )</span>
+			<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+			<button class="btn btn-primary" id="startGame">Start</button>
+		</div>
+	</div>
+
+	<!-- player avatar -->
+
+	<div id="player"></div>
+	<div id="computer"></div>
+
+	<!-- dice -->
+
+	<div class="dropdown clearfix" id="dice">
+      <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu" style="display: block; position: static; margin-bottom: 5px; *width: 180px;">
+        <li><a tabindex="-1" href="#" id="turnName">player's turn</a></li>
+        <li class="divider"></li>
+        <li><h1 style="margin-left:40%;font-size:60px;" id="diceNumber">3</h1></li>
+        <li class="divider"></li>
+        <li><a tabindex="-1" href="#player" id="shakeDice">Shake the dice</a></li>
+      </ul>
+    </div>
+
+
+	<!-- All scripts load below -->
+
+	<!-- <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> -->
+
+	<script src="js/jquery/jquery.js"></script>
+	<script src="bootstrap/js/google-code-prettify/prettify.js"></script>
+	<script src="bootstrap/js/bootstrap-transition.js"></script>
+	<script src="bootstrap/js/bootstrap-alert.js"></script>
+	<script src="bootstrap/js/bootstrap-modal.js"></script>
+	<script src="bootstrap/js/bootstrap-dropdown.js"></script>
+	<script src="bootstrap/js/bootstrap-scrollspy.js"></script>
+	<script src="bootstrap/js/bootstrap-tab.js"></script>
+	<script src="bootstrap/js/bootstrap-tooltip.js"></script>
+	<script src="bootstrap/js/bootstrap-popover.js"></script>
+	<script src="bootstrap/js/bootstrap-button.js"></script>
+	<script src="bootstrap/js/bootstrap-collapse.js"></script>
+	<script src="bootstrap/js/bootstrap-carousel.js"></script>
+	<script src="bootstrap/js/bootstrap-typeahead.js"></script>
+	<script src="bootstrap/js/bootstrap-affix.js"></script>
+
+	<script src="js/player.js"></script>
+	<script src="js/dice.js"></script>
+	<script src="js/board.js"></script>
+	<script src="js/application.js"></script>
+
+</body>
+</html>
