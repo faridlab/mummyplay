@@ -71,3 +71,13 @@
     top : 300px;
     right : 5px;
 }
+
+#cup {
+    width : 500px;
+    height : 500px;
+    position : fixed;
+    top : 100px;
+    left : 100px;
+    z-index: 90;
+    background : url('../img/cup.png') no-repeat center center;
+}

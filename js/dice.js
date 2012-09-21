@@ -11,7 +11,9 @@ $(function(){
 		return _dice;
 	}
 
-	$('#shakeDice').click(function(){
+	var _shakeDice = function(){
+
+		$('#shakeDice').unbind('click'); // unbind event click #shakeDice
 		var round = randomRange();
 		if(round <= 3) round = 3;
 
@@ -70,13 +72,21 @@ $(function(){
 								$('#shakeDice').click();
 							},2000);
 						}
-						// do something again, later.
+						
+						// Bind click event on #shakeDice
+						$('#shakeDice').bind('click',function(){
+							_shakeDice();
+						});
 					}
 
 				},1000);
 
 			}
 		},500);
+	}
+
+	$('#shakeDice').bind('click',function(){
+		_shakeDice();
 	});
 
 });

@@ -2,7 +2,7 @@
 
   $(function(){
   	// hide playmodal at first
-    $('#dice').hide();
+    $('#dice,#cup').hide();
   	$('#MummyplayPopover').popover({ placement : 'bottom'});
 
   	$('#playModal img').click(function(){
@@ -51,6 +51,10 @@
       }
       return computerPlayer;
     };
+
+
+  $('#cup').css('left',($(window).width() / 2) - ($('#cup').width() / 2));
+  // $('#cup').css('top',($(window).height() / 2) - ($('#cup').height() / 2));
 
   });
 
