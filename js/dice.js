@@ -54,6 +54,11 @@ $(function(){
 						around--;
 						clearInterval(this);
 
+						if(player[_turn]['pos'] == 64){
+							$('#cup').show();
+							return;
+						}
+
 						if(shortcut[player[_turn]['pos']]){
 							$('#' + turnPlayer ).animate({
 								"left"	: shortcut[player[_turn]['pos']]['left'],
