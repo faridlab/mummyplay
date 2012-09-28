@@ -76,9 +76,13 @@ $('#computer').css('top',player.computer.pos_y);
 
 var _turn = 'human';
 var turn = function(){
+
 	var swap = player.human.turn;
+
 	player.human.turn = player.computer.turn;
 	player.computer.turn = swap;
+	
 	_turn = 'human';
+
 	if(player.human.turn == 0) _turn = 'computer';
 };

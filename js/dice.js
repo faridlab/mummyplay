@@ -16,7 +16,6 @@ $(function(){
 		$('#shakeDice').unbind('click'); // unbind event click #shakeDice
 		var round = randomRange();
 		if(round <= 3) round = 3;
-
 		var i = 0;
 		setInterval(function(){
 			if(i < round){
@@ -27,7 +26,7 @@ $(function(){
 			if(i == round){
 				i++;
 				var around = parseInt($('#diceNumber').text());
-				clearInterval(this);				
+				clearInterval(this);
 				var turnPlayer = 'player';
 				if(_turn == 'computer') turnPlayer = _turn;
 				setInterval(function(){

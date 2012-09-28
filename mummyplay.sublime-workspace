@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"turn",
+				"turnPlayer"
+			],
+			[
+				"com",
+				"computer"
+			],
+			[
 				"boa",
 				"board_flow"
 			],
@@ -502,18 +514,6 @@
 			[
 				"consol",
 				"console.log();"
-			],
-			[
-				"model",
-				"model"
-			],
-			[
-				"this",
-				"this"
-			],
-			[
-				"arr",
-				"array"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "manifest.json",
 			"settings":
 			{
-				"buffer_size": 462,
+				"buffer_size": 461,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +531,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 6035,
+				"buffer_size": 6110,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +539,7 @@
 			"file": "js/player.js",
 			"settings":
 			{
-				"buffer_size": 1326,
+				"buffer_size": 1549,
 				"line_ending": "Unix",
 				"name": "player.js"
 			}
@@ -548,7 +548,7 @@
 			"file": "js/board.js",
 			"settings":
 			{
-				"buffer_size": 2734,
+				"buffer_size": 3044,
 				"line_ending": "Unix",
 				"name": "board.js"
 			}
@@ -557,7 +557,7 @@
 			"file": "css/mummyplay.css",
 			"settings":
 			{
-				"buffer_size": 1142,
+				"buffer_size": 1328,
 				"line_ending": "Unix",
 				"name": "mummyplay.css"
 			}
@@ -566,7 +566,7 @@
 			"file": "js/application.js",
 			"settings":
 			{
-				"buffer_size": 1628,
+				"buffer_size": 1841,
 				"line_ending": "Unix"
 			}
 		},
@@ -574,7 +574,7 @@
 			"file": "js/dice.js",
 			"settings":
 			{
-				"buffer_size": 999,
+				"buffer_size": 2184,
 				"line_ending": "Unix",
 				"name": "dice.js"
 			}
@@ -854,6 +854,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$('#dice').show();",
 			"120",
 			"top",
 			"board",
@@ -980,8 +981,7 @@
 			"censore",
 			"cat_id",
 			"btu",
-			"area",
-			">\n"
+			"area"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -999,7 +999,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -1007,15 +1007,15 @@
 					"file": "manifest.json",
 					"settings":
 					{
-						"buffer_size": 462,
+						"buffer_size": 461,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								91,
-								91
+								199,
+								199
 							]
 						],
 						"settings":
@@ -1122,15 +1122,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 6035,
+						"buffer_size": 6110,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5961,
-								5961
+								5494,
+								5494
 							]
 						],
 						"settings":
@@ -1227,7 +1227,7 @@
 							"word_wrap": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1575.0,
+						"translation.y": 1944.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1237,15 +1237,15 @@
 					"file": "js/player.js",
 					"settings":
 					{
-						"buffer_size": 1326,
+						"buffer_size": 1549,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								889,
-								889
+								1348,
+								1348
 							]
 						],
 						"settings":
@@ -1318,7 +1318,7 @@
 							[
 							],
 							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
+							"sublimelinter": false,
 							"sublimelinter_delay": 2.0,
 							"sublimelinter_disable":
 							[
@@ -1342,7 +1342,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 630.0,
+						"translation.y": 1080.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1352,15 +1352,15 @@
 					"file": "js/board.js",
 					"settings":
 					{
-						"buffer_size": 2734,
+						"buffer_size": 3044,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								664,
-								664
+								1347,
+								1347
 							]
 						],
 						"settings":
@@ -1433,7 +1433,7 @@
 							[
 							],
 							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
+							"sublimelinter": false,
 							"sublimelinter_delay": 2.0,
 							"sublimelinter_disable":
 							[
@@ -1457,7 +1457,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 398.0,
+						"translation.y": 1512.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1467,15 +1467,15 @@
 					"file": "css/mummyplay.css",
 					"settings":
 					{
-						"buffer_size": 1142,
+						"buffer_size": 1328,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1052,
-								1052
+								1147,
+								1147
 							]
 						],
 						"settings":
@@ -1573,7 +1573,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 585.0,
+						"translation.y": 900.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1583,15 +1583,15 @@
 					"file": "js/application.js",
 					"settings":
 					{
-						"buffer_size": 1628,
+						"buffer_size": 1841,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1143,
-								1143
+								491,
+								491
 							]
 						],
 						"settings":
@@ -1663,7 +1663,7 @@
 							[
 							],
 							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
+							"sublimelinter": false,
 							"sublimelinter_delay": 2.0,
 							"sublimelinter_disable":
 							[
@@ -1698,15 +1698,15 @@
 					"file": "js/dice.js",
 					"settings":
 					{
-						"buffer_size": 999,
+						"buffer_size": 2184,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								464,
-								464
+								1268,
+								1268
 							]
 						],
 						"settings":
@@ -1779,7 +1779,7 @@
 							[
 							],
 							"pyflakes_ignore_import_*": true,
-							"sublimelinter": true,
+							"sublimelinter": false,
 							"sublimelinter_delay": 2.0,
 							"sublimelinter_disable":
 							[
@@ -1803,7 +1803,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 90.0,
+						"translation.y": 756.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
